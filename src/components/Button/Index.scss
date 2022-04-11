@@ -1,0 +1,36 @@
+@import "../../assets/sass/utils/_variables";
+
+.button {
+  background: #d4d4d4;
+  width: 100%;
+  max-width: 300px;
+  height: 75px;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: $bold;
+  border: none;
+  color: #7523e0;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  position: relative;
+
+  &:hover {
+    transition: 0.3s;
+    background: aquamarine;
+    color: #262626;
+  }
+
+  &:disabled {
+    background: #777777;
+    color: #fff;
+  }
+
+  i {
+    font-size: 30px;
+    position: absolute;
+    left: 12px;
+    top: 20px;
+  }
+}

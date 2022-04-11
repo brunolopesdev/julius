@@ -1,0 +1,50 @@
+@import "../../assets/sass/utils/_variables";
+
+.event__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+  padding-top: 50px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+
+  .edit__text,
+  .add__text {
+    color: $purple-light;
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+  }
+
+  form {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .field__container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid $purple;
+
+      &::placeholder {
+        padding-left: 0.5rem;
+      }
+
+      &:focus {
+        outline: none;
+        border: 2px solid $purple-light;
+      }
+    }
+  }
+}

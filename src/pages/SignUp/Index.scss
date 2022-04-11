@@ -1,0 +1,67 @@
+@import "../../assets/sass/utils/variables";
+
+.signup__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 30px;
+    padding: 2rem 0;
+    color: rgb(88, 88, 88);
+
+    span {
+      color: $purple-light;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .signup__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px -6px #777;
+
+    .input__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0.3rem 0;
+
+      label {
+        font-size: 18px;
+      }
+    }
+
+    input {
+      height: 50px;
+      border-radius: 5px;
+      border: 1px solid $purple;
+
+      &::placeholder {
+        padding-left: 0.5rem;
+      }
+
+      &:focus {
+        outline: none;
+        border: 2px solid $purple-light;
+      }
+    }
+  }
+}
